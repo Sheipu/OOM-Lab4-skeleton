@@ -33,9 +33,9 @@ public class TimeZoneTranslatorTest {
 		assertEquals(dateTest.toString(), dateTestIKnow.toString());
 		
 		DateTime dateTest1 = new DateTime(2016, 1, 1, 6, 0, 0);
-		String dateTestIKnow1 = "2015-12-31 21:00:00";
+		String dateTestIKnow1 = "2015-12-31 20:00:00";
 		
-		dateTest1 = TimeZoneTranslator.shiftTimeZone(dateTest1, 0, -9);
+		dateTest1 = TimeZoneTranslator.shiftTimeZone(dateTest1, 0, -10);
 		
 		System.out.println(String.format("First test1:%s", dateTest1.toString()));
 		System.out.println(String.format("First test1:%s", dateTestIKnow1.toString()));
